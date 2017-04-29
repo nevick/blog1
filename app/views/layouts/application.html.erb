@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog1</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  </head>
+  <header class="bs-docs-nav navbar navbar-static-top" id="top">
+    <div class="container">
+
+      <%= render partial: 'layouts/menu' %>
+    </div>
+    <div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </div>
+  </header>
+
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
